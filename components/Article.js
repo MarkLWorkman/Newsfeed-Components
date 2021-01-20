@@ -149,3 +149,8 @@ function articleMaker (articleObj) {
 
   return article;
 }
+
+data.forEach((articleObj) => {
+  const articleCompelation = articleMaker(articleObj);
+  articles.appendChild(articleCompelation);
+});
