@@ -124,4 +124,15 @@ function articleMaker (articleObj) {
   const articleP2 = document.createElement('p');
   const articleP3 = document.createElement('p');
   const articleButton = document.createElement('span');
+
+  article.appendChild(articleTitle);
+  article.appendChild(articleDate);
+  article.appendChild(articleP1);
+  article.appendChild(articleP2);
+  article.appendChild(articleP3);
+  article.appendChild(articleButton);
+
+  article.classList.add('article');
+  articleDate.classList.add('date');
+  articleButton.classList.add('expandButton');
 }
