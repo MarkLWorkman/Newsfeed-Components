@@ -135,4 +135,11 @@ function articleMaker (articleObj) {
   article.classList.add('article');
   articleDate.classList.add('date');
   articleButton.classList.add('expandButton');
+
+  articleTitle.textContent = articleObj.title;
+  articleDate.textContent = articleObj.date;
+  articleP1.textConent = articleObj.firstParagraph;
+  articleP2.textContent = articleObj.secondParagraph;
+  articleP3.textContent = articleObj.thirdParagraph;
+  articleButton.textContent = '+';
 }
