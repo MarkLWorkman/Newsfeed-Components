@@ -35,16 +35,16 @@ let menuItems = [
 function menuMaker(array) {
 
   const menu = document.createElement('div');
-  const holder = document.createElement('ul');
+  const item = document.createElement('ul');
 
   menu.className = 'menu';
 
-  menu.appendChild(holder);
+  menu.appendChild(item);
 
   array.forEach(element => {
     const items = document.createElement('li');
     items.textContent = element;
-    holder.appendChild(items);
+    item.appendChild(items);
   });
 
   const menuButton = document.querySelector('.menu-button');
