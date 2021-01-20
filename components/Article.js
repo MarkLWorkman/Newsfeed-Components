@@ -142,4 +142,10 @@ function articleMaker (articleObj) {
   articleP2.textContent = articleObj.secondParagraph;
   articleP3.textContent = articleObj.thirdParagraph;
   articleButton.textContent = '+';
+
+  articleButton.addEventListener('click', (event) => {
+    article.classList.toggle('article-open');
+  });
+
+  return article;
 }
